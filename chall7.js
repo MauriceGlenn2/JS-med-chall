@@ -25,7 +25,7 @@ attempting to find the largest number in an empty array could lead to errors.
 
 
 function getMax (arr) {
-    let largest = arr[0]
+    let largest = arr[0]           // Initialize the variable to the first element of the array
     for (let i = 0; i < arr.length; i++){
         console.log(arr[i])       //check to see if we are looping through
         if (arr[i] > largest){   //Compare the current element to the current largest
