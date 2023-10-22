@@ -1,12 +1,15 @@
 
-let newArr = []
-function filterOut(arr1) {
-  for (let i = 0; i < arr1.length; i++) {
-    // console.log(arr1[i]);
-    if (arr1[i] === !arr1[i]){
-        newArr.push(arr1[i])
-    }
-  }
-  return newArr
+/**
+ * Truthy to true, Falsy to false
+ * Givenan array of truthy and falsy values, return the same array of elements into its boolean
+ * value
+ * convertToBoolean([500, 0, 'david','',[]]) -> [T, F, T, F, T]
+ */
+
+
+//map is used to converting elements
+function convertToBoolean(arr) {
+  return arr.map(element => !!element)
 }
-console.log(filterOut(["Tomato", "orange", "ban", false]));
+
+console.log(convertToBoolean([500, 0, "david", "", []]));
